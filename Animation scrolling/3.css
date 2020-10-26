@@ -54,6 +54,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     color: #2C3E50;
+    transition: .5s ease;
 }
 
 .nav li:hover {
@@ -77,6 +78,7 @@ nav {
     width: 110px;
     left: 229px;
     display: none;
+    transition: .5s ease;
     animation: fade-sub-menu .5s ease;
 }
 
