@@ -12,7 +12,7 @@ window.onscroll = function() {
             value.style.color = '#FBFCFC';
         });
         subMenu.style.background = '#2C3E50';
-
+  
     } else {
         nav.style.background = 'transparent';
         navCon.style.padding = '20px 40px';
