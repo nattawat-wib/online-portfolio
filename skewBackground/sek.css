@@ -1,0 +1,83 @@
+body {
+    color: azure;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h {
+    transition: .5s ease;
+    width: 250px;
+    height: 250px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: auto 10px;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: translate(0, -10px);
+    box-shadow: 7px 7px 10px gray;
+}
+
+.box:hover .h {
+    filter: brightness(120%);
+}
+
+.big {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.h2 {
+    transition: .5s ease;
+    width: 250px;
+    height: 250px;
+
+}
+
+.box2 {
+    margin: auto 10px;
+    transition: .5s ease;
+    position: relative;
+}
+
+.text-img-box {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.box2:hover > .text-img-box {
+    opacity: 1;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+}
+
+.text-img-box > h1 {
+   text-align: center;
+   font-size: 14px;
+}
+
+.box2:hover > .h2 {
+   transform: translate(1.5);
+}
+
