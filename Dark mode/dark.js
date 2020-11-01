@@ -78,12 +78,18 @@ function aboutConFade() {
     }
 }
 
+function productParallax() {
+    const productSection = document.getElementById('productHead');
+    productSection.style.color = 'red';
+}
+
 function run() {
     document.addEventListener('scroll', function () {
         headerParallax();
         aboutFade();
         aboutConFade();
         paraImgAbout();
+        productParallax();
     })
 }
 
