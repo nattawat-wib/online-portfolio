@@ -2,15 +2,15 @@ const nav = document.querySelector('nav');
 const navCon = document.querySelector('.nav');
 
 window.onscroll = function () {
-    if (pageYOffset < 1) {
+    if (pageYOffset < 1 && window.innerWidth > 1211) {
         nav.style.backgroundColor = 'transparent'
         navCon.style.padding = '40px 40px';
         nav.style.borderBottom = 'none'
 
     } else {
-        nav.style.backgroundColor = 'rgba(44, 62, 80, 0.8)'
+        nav.style.backgroundColor = '#17202a'
         navCon.style.padding = '0 40px';
-        nav.style.borderBottom = '4px solid #85929e'
+        nav.style.borderBottom = '1px solid #85929e'
     }
 }
 
@@ -25,15 +25,20 @@ function headerParallax() {
 const aboutLeft = document.querySelector('.about__detail--box1');
 const aboutRight = document.querySelector('.about__detail--box2');
 const aboutHeadText = document.querySelector('.about__head');
+const toTopButton = document.querySelector('.back-to-top i');
 
 function aboutFade() {
-    if (scrollY > 500) {
+    if (scrollY > 200) {
         aboutHeadText.classList.remove('fade-out');
         aboutHeadText.classList.add('fade-in');
+
+        toTopButton.style.opacity = '1';
 
     } else {
         aboutHeadText.classList.remove('fade-in');
         aboutHeadText.classList.add('fade-out');
+
+        toTopButton.style.opacity = '0';
 
     }
 
@@ -78,19 +83,36 @@ function aboutConFade() {
     }
 }
 
-function productParallax() {
-    const productSection = document.getElementById('productHead');
-    productSection.style.color = 'red';
-}
-
 function run() {
     document.addEventListener('scroll', function () {
         headerParallax();
         aboutFade();
         aboutConFade();
-        paraImgAbout();
-        productParallax();
     })
 }
-
 run();
+
+const navToggle = document.querySelector('nav label');
+const toggleCheck = document.getElementById('toggle-sub-menu');
+
+navToggle.addEventListener('click', function (){
+    if (toggleCheck.checked == true) {
+        navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+    } else {
+        navToggle.innerHTML = '<i class="fas fa-times"></i>';
+    }
+});
+
+const subMenuList = document.querySelectorAll('.sub-menu a');
+const subMenuBar = document.querySelector('.sub-menu');
+
+subMenuList.forEach((list) => {
+    list.addEventListener('click', () => {
+        subMenuBar.style.width = '0vw';
+        setTimeout(()=> {subMenuBar.removeAttribute('style')}
+                  ,500);
+        toggleCheck.checked = false;
+        navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    })
+})

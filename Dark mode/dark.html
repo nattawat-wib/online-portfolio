@@ -13,16 +13,29 @@
 </head>
 
 <body>
+    <br id="top">
     <nav>
         <div class="nav container">
             <h1 class="nav__logo"> <a href="./dark.html"> Anderson & Kieth </a></h1>
             <ul>
-                <li><a href="#"> About </a></li>
-                <li><a href="#"> Product </a></li>
-                <li class="nav__toggle"> <i class="fas fa-bars"></i></li>
+                <li><a href="#ab"> About </a></li>
+                <li><a href="#pd"> Product </a></li>
+                <li class="nav__menu--order"><a href="#"> ORDER NOW </a></li>
+                <li class="nav__toggle"> <label for="toggle-sub-menu"> <i class="fas fa-bars"></i> </label> </li>
             </ul>
         </div>
     </nav>
+
+    <input type="checkbox" id="toggle-sub-menu">
+    <div class="sub-menu">
+        <a href="#ab"> ABOUT </a>
+        <a href="#pd"> PRODUCT </a>
+        <a href="#"> IDEATION & CONCEPT </a>
+        <a href="#"> OUR VISION </a>
+        <a href="#"> Q&A </a>
+        <a href="#"> CONTACT US </a>
+        <a href="#"> ASSISTANCE </a>
+    </div>
 
     <header>
         <section class="header__box container">
@@ -53,7 +66,7 @@
 
     <main>
         <section class="about container">
-            <div class="about__head">
+            <div class="about__head" id="ab">
                 <h1> ABOUT US </h1>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil illo quia
                     velit perspiciatis. Laboriosam quo voluptas praesentium illo suscipit? Sunt nisi enim sed blanditiis
@@ -69,7 +82,7 @@
                     <img src="./img/old watch store.jpg">
                 </div>
                 <div class="about__detail--box2">
-                    <h2> START FROM SMALL STORE IN SMALL TOWN </h2>
+                    <h2> FROM SMALL STORE IN SMALL TOWN </h2>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum unde totam asperiores maiores
                         deleniti accusantium possimus enim tempora earum distinctio velit corporis quas voluptate, nam,
@@ -107,13 +120,14 @@
                     </div>
                 </div>
             </div>
+            <br id="pd">
         </section>
         <!--!======================= END OF ABOUT =========================================-->
 
         <section>
-            <div class="product container">
+            <div class="product container" id="productHead">
                 <div class="product__head">
-                    <h1 > PRODUCT </h1>
+                    <h1> PRODUCT </h1>
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, eaque aut. Accusantium earum
                         error laborum quod, autem dolorum id illo reprehenderit eos repudiandae minima, nihil laudantium
                         corrupti ipsum dolorem adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -124,19 +138,31 @@
                 <div class="product__list">
                     <div class="product__list--menu list1">
                         <button> BUY NOW </button>
-                        <p> watch for men <br> 
-                            13$ </p>
+                        <h1> AMEGEDON <br> 299$ </h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae porro nobis facilis.
+                            Similique velit quasi id ex eveniet aspernatur beatae hic facere laudantium maiores
+                            architecto nesciunt, vitae saepe odit tempore.
+                        </p>
                     </div>
-                    
+
                     <div class="product__list--menu list2">
                         <button> BUY NOW </button>
-                        <p> watch for men <br> 
-                            13$ </p>
+                        <h1> ANDER AM34-6 <br> 599$ </h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae porro nobis facilis.
+                            Similique velit quasi id ex eveniet aspernatur beatae hic facere laudantium maiores
+                            architecto nesciunt, vitae saepe odit tempore.
+                        </p>
                     </div>
                     <div class="product__list--menu list3">
-                         <button> BUY NOW </button>
-                        <p> watch for men <br> 
-                            13$ </p>
+                        <button> BUY NOW </button>
+                        <h1> ANDER M16 <br> 1090$ </h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae porro nobis facilis.
+                            Similique velit quasi id ex eveniet aspernatur beatae hic facere laudantium maiores
+                            architecto nesciunt, vitae saepe odit tempore.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -145,20 +171,48 @@
 
     <footer>
         <div class="footer container">
-            <div>
+            <div class="footer__row1">
+                <div class="footer__row1--location">
+                    <p> United States, USA </p>
+                    <p> San Francisco Bay Area </p>
+                    <p> 2020 </p>
+                </div>
+
+                <ul> Help
+                    <li> Contact Us </li>
+                    <li> Call Center </li>
+                    <li> Location </li>
+                </ul>
+
+                <ul> News
+                    <li> Events </li>
+                    <li> Promotion </li>
+                    <li> New Product </li>
+                </ul>
+
+                <ul> Policy
+                    <li> Privacy </li>
+                    <li> Support </li>
+                </ul>
+            </div>
+            <div class="footer__row2">
                 <p>
                     © 2020 Agente
                     Privacy Policy
                     UX/UI design and software development company.
                 </p>
-            </div>
-            <div>
-                <p>
-
-                </p>
+                <div class="footer__row2--icon">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
             </div>
         </div>
     </footer>
+
+    <div class="back-to-top">
+        <a href="#top"><i class="fas fa-angle-up"></i></a>
+    </div>
 
     <script src="./dark.js"></script>
 </body>
