@@ -116,3 +116,8 @@ subMenuList.forEach((list) => {
         navToggle.innerHTML = '<i class="fas fa-bars"></i>';
     })
 })
+
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+})
