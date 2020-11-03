@@ -1,0 +1,62 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: wheat;
+    transition: 2s ease
+}
+
+.loader__img {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: auto;
+}
+
+.loader__text {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+}
+
+.parallax__bg {
+    background: url('./img/sky.jpg')
+                no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.parallax__star {
+    background: url('./img/star.png')
+    no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    z-index: 10;
+}
+
+.parallax__mountain {
+    background: url('./img/mountain.png')
+    no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    z-index: 10;
+}
