@@ -18,7 +18,7 @@ function navbarAnimate() {
     const nav = document.querySelector('nav');
     const parallaxBg = document.querySelector('.parallax__bg');
 
-    if(pageYOffset < 200) {
+    if(pageYOffset < 10) {
         nav.style.opacity = '1';
         nav.style.backgroundColor = 'transparent';
         nav.style.padding = '30px 0';
@@ -35,6 +35,32 @@ function navbarAnimate() {
     } 
 }
 
+function scrollTextAnimation() {
+    const scrollDownText = document.querySelector('.scroll-down');
+    
+    if(pageYOffset > 10) {
+        scrollDownText.style.opacity = '0'
+    
+    } else {
+        scrollDownText.style.opacity = '1'
+    } 
+}
+
+function backToTopFade() {
+    const backToTopButton = document.querySelector('.back-to-top a');
+    const aboutCheckBox = document.getElementById('ab');
+
+    if(pageYOffset < aboutCheckBox.offsetTop) {
+        backToTopButton.style.opacity = '0';
+    
+    } else {
+        backToTopButton.style.opacity = '1';
+    }
+
+    console.log(pageYOffset);
+    console.log(aboutCheckBox.offsetTop);
+}
+
 function run() {
     window.addEventListener('load', () => {
         const loaderPage = document.querySelector('.loader'); 
@@ -47,7 +73,8 @@ function run() {
     window.addEventListener('scroll', () => {
         parallaxHeader();
         navbarAnimate();
-
+        scrollTextAnimation();
+        backToTopFade();
     })
 }
 run();

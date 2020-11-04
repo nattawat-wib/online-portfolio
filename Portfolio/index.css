@@ -97,7 +97,7 @@ nav ul li a {
     padding: 12px 20px;
     border-radius: 7px;
     transition: .5s;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 nav ul li a:hover{
@@ -175,6 +175,41 @@ nav ul li a:hover{
     z-index: 11;
     position: relative;
     outline: none;
+}
+
+.scroll-down {
+    position: absolute;
+    width: 40%;
+    bottom: 10vh;
+    left: 30%;
+    z-index: 99;
+    color: #859AAD;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+
+.scroll-down i:nth-child(1) {
+    animation: blink 1s ease .9s infinite;
+}
+.scroll-down i:nth-child(2) {
+    animation: blink 1s ease infinite;
+}
+.scroll-down p {
+    animation: blink 1s ease .18s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 main {
@@ -257,6 +292,42 @@ main {
 
 .skill__icon-group img:last-child {
     border: 3px solid #000000;
+}
+
+.back-to-top {
+    cursor: pointer;
+}
+
+.back-to-top a {
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    font-size: 50px;
+    color: #B7DBD8;
+    animation: jump 1s ease infinite;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.back-to-top a:hover {
+    color: #859AAD;
+    cursor: pointer;
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translate(0,0);
+    }
+    40% {
+        transform: translate(0,-6px);
+    }
+    60% {
+        transform: translate(0,-6px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
 }
 
 footer {
