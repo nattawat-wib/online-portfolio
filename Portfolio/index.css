@@ -72,7 +72,19 @@ nav {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    
+}
+
+nav label {
+    display: none;
+    color: #B7DBD8;
+    font-size: 30px;
+    z-index: 30;
+    padding: 0 20px;
+    margin: 0;
+}
+
+nav input {
+    display: none;
 }
 
 nav ul {
@@ -83,7 +95,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin: 10px;
 }
 
 nav ul li:hover a {
@@ -169,7 +181,7 @@ nav ul li a:hover{
     no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     margin-top: -10%;
     z-index: 11;
     position: relative;
@@ -213,7 +225,7 @@ nav ul li a:hover{
 }
 
 main {
-    margin-top: -40vh;
+    margin-top: -100vh;
 }
 
 .section {
@@ -482,9 +494,6 @@ footer ul li a:hover {
         width: 25%;
     }
 
-    .parallax__cloud {
-        width: 100vw;
-    }
 
     .title {
         margin: 0 auto 50px auto;
@@ -510,7 +519,7 @@ footer ul li a:hover {
     }
 
     .project-list {
-        margin: 40px auto;
+        margin: 20px auto;
     }
 
     .project-des {
@@ -519,8 +528,52 @@ footer ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        padding: 30px 0;
+        width: 100%;
+        z-index: 11;
+        background-color: transparent;
+        transition: 1s ease;
+    }
+
+    .nav {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav input:checked ~ ul {
+        height: 355px;
+        width: 100%;
+        background-color: #152D4F;
+        text-align: center;
+        margin-top: -75px;
+        padding-top: 75px;
+    }
+
+    nav input:checked ~ label {
+        color: red;
+        background-color: red;
+    }
+
+    nav label {
+        display: block;
+        align-self: flex-end;
+    }
+
     nav ul {
-       display: none;
+       display: block;
+       height: 0;
+       overflow: hidden;
+       transition: .5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
     }
 
     .parallax__text {
