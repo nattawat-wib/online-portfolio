@@ -1,5 +1,5 @@
 .loader {
-    position: relative;
+    position: absolute;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -31,6 +31,8 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
 }
 
 .my-container {
@@ -82,6 +84,7 @@ nav ul li a {
     color: white;
     font-size: 30px;
     font-weight: bold;
+    font-weight: 100;
 }
 
 nav ul li a:hover{
@@ -161,6 +164,10 @@ nav ul li a:hover{
     outline: none;
 }
 
+main {
+    margin-top: -40vh;
+}
+
 .about__head {
     font-size: 100px;
     text-align: center;
@@ -168,7 +175,9 @@ nav ul li a:hover{
 }
 
 .about__img img {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    display: block;
     border-radius: 25px;
 }
 
@@ -185,5 +194,38 @@ nav ul li a:hover{
 .about__detail p {
     text-align: left;
     font-size: 25px;
+}
+
+.educate {
+    margin: 60px auto;
+}
+
+.educate__head-text{
+    text-align: left;
+}
+
+.skill {
+    margin: 60px auto;
+}
+
+.skill__head-text {
+    text-align: left;
+}
+
+.skill__icon-group{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.skill__icon-group img {
+    border-radius: 25%;
+    width: 14%;
+    margin: 10px;
+}
+
+.skill__icon-group img:last-child {
+    border: 3px solid black;
 }
 

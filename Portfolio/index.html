@@ -19,12 +19,12 @@
         <img class='loader__img' src="./img/loader img.gif" alt="">
         <img class="loader__text" src="./img/loader text.gif" alt="">
     </div>
-    <header>
+    <header id='home'>
         <nav>
             <div class="nav my-container">
                 <ul>
-                    <li><a href="#"> Home </a></li>
-                    <li><a href="#"> About </a></li>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
                     <li><a href="#"> Project </a></li>
                     <li><a href="#"> Contact </a></li>
                 </ul>
@@ -39,15 +39,18 @@
         </div>
         <div class="parallax__cloud"></div>
     </header>
-
+  
     <main>
-        <section class="about container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+        <section id="about" class="about container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0"
+            data-aos-once="false">
             <h1 class="about__head"> ABOUT ME </h1>
             <div class="row">
-                <div class="about__img col-6 " data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">
+                <div class="about__img col-xl-6 " data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300"
+                    data-aos-once="false">
                     <img src="./img/profile image.jpg" alt="">
                 </div>
-                <div class="about__detail col-6 " data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">
+                <div class="about__detail col-xl-6 " data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300"
+                    data-aos-once="false">
                     <h2> i'm a beginner wed developer </h2>
                     <br>
                     <br>
@@ -55,28 +58,66 @@
                         <div class="row">
                             <div class=" col-4">
                                 <p> Name : </p>
+                                <p> Age : </p>
                                 <p> Birth Date : </p>
                                 <p> Location : </p>
-                                <p> Graduate : </p>
-                                <br>
-                                <p> Skill : </p>
+                                <p> Hobby & Interest : </p>
                             </div>
 
                             <div class=" col-8">
-                                <p> Nut </p>
+                                <p> Nattawat Wiboonkosol (Nut) </p>
+                                <p> 22</p>
                                 <p> 9 April 1998 </p>
-                                <p> Rangsit Phathumthani </p>
-                                <p> Music Degree Silpakorn University </p>
-                                <p> HTML </p>
-                                <p> CSS </p>
-                                <p> JavaScript </p>
-                                <p> jQuery </p>
-                                <p> SQL </p>
-                                <p> GitHub </p>
+                                <p> Rangsit, Pathum thani </p>
+                                <p> <i class="fas fa-music"></i> &nbsp; Music, &nbsp; <i class="fas fa-palette"></i> &nbsp; Art </p>
+                                <p>  </p>
+                                <p> <i class="fas fa-basketball-ball"></i> &nbsp; Basketball </p>
+                                <p> <img src="https://img.icons8.com/windows/32/000000/cactus.png"/> &nbsp; Cactus </p>
+                                <p> <i class="fas fa-laptop-code"></i> &nbsp; Computer, IT </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="educate">
+                <h1 class="educate__head-text"> EDUCATE </h1>
+                <div class="educate__box-1">
+                    <p class="educate__box--head"> 
+                        Silpakorn University 
+                    </p>
+                    <p class="educate__box--sub-head"> 
+                        Bachelor of Music (Commercial Music) 2017 - 2020    
+                    </p>
+                    <p class="educate__box--detail"> </p>
+                </div>
+                <div class="educate__box-2">
+
+                </div>
+                <div class="educate__box-3">
+
+                </div>  
+            </div>
+
+            <div class="skill container">
+                <h1 class="skill__head-text"> SKILLS </h1>
+                <div class="skill__icon-group">
+                    <img src="./img/Skill Icon/HTML5.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+                    <img src="./img/Skill Icon/CSS3.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <img src="./img/Skill Icon/JavaScript.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="./img/Skill Icon/Bootsrap.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <img src="./img/Skill Icon/jQuery.jpg" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="./img/Skill Icon/Adobe XD.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <img src="./img/Skill Icon/Figma.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <img src="./img/Skill Icon/DOTNET.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+                    <img src="./img/Skill Icon/MS SQL.jpg" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <img src="./img/Skill Icon/GitHub.png" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                </div>
+            </div>
+            
+        </section>
+            <div >
+
             </div>
         </section>
     </main>
@@ -97,5 +138,3 @@
         AOS.init();
     </script>
 </body>
-
-</html>
