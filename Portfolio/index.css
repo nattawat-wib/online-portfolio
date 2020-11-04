@@ -8,7 +8,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    background-color: wheat;
+    background-color: #B7DBD8;
     transition: 2s ease;
     z-index: 99;
 }
@@ -33,7 +33,13 @@ html, body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     position: relative;
+    overflow: overlay;
     font-family: 'Kanit', sans-serif !important; 
+}
+
+*::selection {
+    background-color:#B7DBD8 ;
+    color: #152D4F ;
 }
 
 .my-container {
@@ -45,11 +51,10 @@ html, body {
     background: transparent;
     width: 10px;
     color: transparent;
-  
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: tomato;
+    background-color: #6BAFBB;
     border-radius: 10px;
 }
 
@@ -68,6 +73,7 @@ nav {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 nav ul {
@@ -82,22 +88,21 @@ nav ul li {
 }
 
 nav ul li:hover a {
-    background-color: tomato;
-    color: green;
+    background-color: #B7DBD8;
 }
 
 nav ul li a {
-    color: white;
-    font-size: 30px;
-    font-weight: 100;
-    padding: 5px 10px;
+    color: #B7DBD8;
+    font-size: 25px;
+    padding: 12px 20px;
     border-radius: 7px;
     transition: .5s;
+    font-weight: 500;
 }
 
 nav ul li a:hover{
     text-decoration: none;
-    color: white;
+    color: #215C7D;
 }
 
 .parallax__bg {
@@ -134,7 +139,7 @@ nav ul li a:hover{
 }
 
 .parallax__text {
-    color: white;
+    color: #b7dbd8;
     font-size: 200px;
     text-align: center;
     z-index: 9;
@@ -185,28 +190,38 @@ main {
 }
 
 .title {
+    color: #6BAFBB;
     font-size: 100px;
     margin: 100px auto;
     text-align: center;
+    font-weight: 700;
 }
 
 .sub-title{
+    color: #859AAD;
     font-size: 50px;
+    font-weight: 500;
 }
 
 .main {
-    font-size: 35px;
+    color: #152D4F;
+    font-size: 30px;
     margin: 0 40px;
+    font-weight: 400;
 }
 
 .sub-main, .year {
+    color: #859AAD;
     font-size: 20px;
     margin: 0 40px;
+    font-weight: 400;
 }
 
 .detail {
-    font-size: 25px;
-    margin: 0 40px;
+    color: #152D4F;
+    font-size: 20px;
+    margin: 0 40px; 
+    font-weight: 200;
 }
 
 .about__img img {
@@ -214,11 +229,17 @@ main {
     margin: auto;
     display: block;
     border-radius: 25px;
+    }
+
+.about__intro {
+    font-weight: 100;
 }
 
 .about__detail p {
+    color: #215C7D;
     text-align: left;
-    font-size: 25px;
+    font-size: 23px;
+    font-weight: 400;
 }
 
 .skill__icon-group{
@@ -235,18 +256,36 @@ main {
 }
 
 .skill__icon-group img:last-child {
-    border: 3px solid black;
+    border: 3px solid #000000;
 }
 
 footer {
-    background-color: black;
-    height: 25vh;
+    border-top: 5px solid #6BAFBB;
+    background-color: #152D4F;
+    height: auto;
     width: 100%;
+    padding-top: 30px;
 }
 
 .footer {
     background-color: transparent;
-    color: white;
+    color: #B7DBD8;
+}
+
+footer ul{
+    list-style: none;
+    font-size: 17px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #859AAD;
+    transition: .5s ease;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #B7DBD8;
 }
 
 .footer-row2 {
@@ -254,4 +293,19 @@ footer {
    flex-flow: row wrap;
    justify-content: space-between;
    align-items: center; 
+   padding: 0 20px;
+}
+
+.footer-row2 i {
+  margin-right: 20px;
+  margin-right: 20px;
+  font-size: 17px;
+  color: #859AAD;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.footer-row2 i:hover {
+    color: #B7DBD8;
+    text-decoration: none;
 }

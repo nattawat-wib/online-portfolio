@@ -22,11 +22,13 @@ function navbarAnimate() {
         nav.style.opacity = '1';
         nav.style.backgroundColor = 'transparent';
         nav.style.padding = '30px 0';
+        nav.style.borderBottom = 'none';
 
     } else if(window.scrollY > parallaxBg.offsetHeight) {
         nav.style.opacity = '1';
-        nav.style.backgroundColor = 'black';
-        nav.style.padding = '5px 0';
+        nav.style.backgroundColor = '#152D4F';
+        nav.style.padding = '12px 0';
+        nav.style.borderBottom = '#3892B8 solid 3px';
         
     } else {
         nav.style.opacity = '0';
@@ -38,7 +40,7 @@ function run() {
         const loaderPage = document.querySelector('.loader'); 
 
         loaderPage.style.opacity = '0';
-        loaderPage.style.height = '0vh'
+        // loaderPage.style.height = '0vh'
         setTimeout(()=>{loaderPage.style.display = 'none';} , 2000) 
     })
 
