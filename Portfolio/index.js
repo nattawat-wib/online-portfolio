@@ -16,7 +16,7 @@ function parallaxHeader() {
 
 function navbarAnimate() {
     const nav = document.querySelector('nav');
-    const parallaxBg = document.querySelector('.parallax__bg');
+    const cloud = document.querySelector('.parallax__cloud');
 
     if(pageYOffset < 10) {
         nav.style.opacity = '1';
@@ -24,7 +24,7 @@ function navbarAnimate() {
         nav.style.padding = '30px 0';
         nav.style.borderBottom = 'none';
 
-    } else if(window.scrollY > parallaxBg.offsetHeight) {
+    } else if(window.scrollY > cloud.offsetHeight) {
         nav.style.opacity = '1';
         nav.style.backgroundColor = '#152D4F';
         nav.style.padding = '12px 0';
@@ -50,16 +50,28 @@ function backToTopFade() {
     const backToTopButton = document.querySelector('.back-to-top a');
     const aboutCheckBox = document.getElementById('ab');
 
-    if(pageYOffset < aboutCheckBox.offsetTop) {
+    if(pageYOffset < aboutCheckBox.offsetTop + 100) {
         backToTopButton.style.opacity = '0';
     
     } else {
         backToTopButton.style.opacity = '1';
     }
-
-    console.log(pageYOffset);
-    console.log(aboutCheckBox.offsetTop);
 }
+
+const allProjectImg = document.querySelectorAll('.project img');
+const projectDescription = document.querySelectorAll('.project-des');
+
+allProjectImg.forEach((img, index) => {
+    img.addEventListener('mouseover', () => {
+        projectDescription[index].style.color = '#152D4F';
+    })
+
+    img.addEventListener('mouseout', () => {
+        projectDescription.forEach((text) => {
+            text.style.color = '#B7DBD8';
+        })
+    })
+})
 
 function run() {
     window.addEventListener('load', () => {

@@ -65,7 +65,7 @@ nav {
     width: 100%;
     z-index: 11;
     background-color: transparent;
-    transition: .5s ease;
+    transition: 1s ease;
 }
 
 .nav {
@@ -184,8 +184,9 @@ nav ul li a:hover{
     left: 30%;
     z-index: 99;
     color: #859AAD;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -226,10 +227,11 @@ main {
 
 .title {
     color: #6BAFBB;
-    font-size: 100px;
+    font-size: 80px;
     margin: 100px auto;
     text-align: center;
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .sub-title{
@@ -257,6 +259,10 @@ main {
     font-size: 20px;
     margin: 0 40px; 
     font-weight: 200;
+}
+
+.about {
+    background-color: #B7DBD8;
 }
 
 .about__img img {
@@ -294,6 +300,45 @@ main {
     border: 3px solid #000000;
 }
 
+.project {
+    background-color: #B7DBD8;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.project img:hover {
+    transform: translate(0, -10px);
+    box-shadow: 5px 5px 20px gray;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.project-list {
+    margin: auto;
+}
+
+.project-des {
+    user-select: none;
+    text-align: center;
+    color: #B7DBD8;
+    font-size: 20px;
+    margin: 20px 0;
+    transition: .5s ease;
+}
+
+.project-des span {
+    font-size: 22px;
+    margin: 1px 0;
+    display: block;
+}
+
 .back-to-top {
     cursor: pointer;
 }
@@ -303,7 +348,7 @@ main {
     bottom: 0;
     right: 40px;
     font-size: 50px;
-    color: #B7DBD8;
+    color: #215C7D;
     animation: jump 1s ease infinite;
     transition: .5s ease;
     cursor: pointer;
