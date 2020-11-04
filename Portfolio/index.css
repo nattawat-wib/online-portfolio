@@ -33,6 +33,7 @@ html, body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     position: relative;
+    font-family: 'Kanit', sans-serif !important; 
 }
 
 .my-container {
@@ -55,11 +56,11 @@ html, body {
 nav {
     position: fixed;
     top: 0;
+    padding: 30px 0;
     width: 100%;
     z-index: 11;
     background-color: transparent;
-    transition: opacity .5s ease,
-                background-color 2s ease;
+    transition: .5s ease;
 }
 
 .nav {
@@ -77,14 +78,21 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 20px 30px;
+    margin-right: 20px;
+}
+
+nav ul li:hover a {
+    background-color: tomato;
+    color: green;
 }
 
 nav ul li a {
     color: white;
     font-size: 30px;
-    font-weight: bold;
     font-weight: 100;
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: .5s;
 }
 
 nav ul li a:hover{
@@ -168,10 +176,37 @@ main {
     margin-top: -40vh;
 }
 
-.about__head {
+.section {
+    margin: 60px auto 100px auto;
+}
+
+.content-box {
+    margin: 40px;
+}
+
+.title {
     font-size: 100px;
+    margin: 100px auto;
     text-align: center;
-    margin: -100px auto 100px auto;
+}
+
+.sub-title{
+    font-size: 50px;
+}
+
+.main {
+    font-size: 35px;
+    margin: 0 40px;
+}
+
+.sub-main, .year {
+    font-size: 20px;
+    margin: 0 40px;
+}
+
+.detail {
+    font-size: 25px;
+    margin: 0 40px;
 }
 
 .about__img img {
@@ -181,35 +216,9 @@ main {
     border-radius: 25px;
 }
 
-.about__detail {
-    padding: 0 10px;
-}
-
-.about__detail h2 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 100;
-}
-
 .about__detail p {
     text-align: left;
     font-size: 25px;
-}
-
-.educate {
-    margin: 60px auto;
-}
-
-.educate__head-text{
-    text-align: left;
-}
-
-.skill {
-    margin: 60px auto;
-}
-
-.skill__head-text {
-    text-align: left;
 }
 
 .skill__icon-group{
@@ -229,3 +238,20 @@ main {
     border: 3px solid black;
 }
 
+footer {
+    background-color: black;
+    height: 25vh;
+    width: 100%;
+}
+
+.footer {
+    background-color: transparent;
+    color: white;
+}
+
+.footer-row2 {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center; 
+}

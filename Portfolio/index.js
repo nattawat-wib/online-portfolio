@@ -21,10 +21,12 @@ function navbarAnimate() {
     if(pageYOffset < 200) {
         nav.style.opacity = '1';
         nav.style.backgroundColor = 'transparent';
+        nav.style.padding = '30px 0';
 
     } else if(window.scrollY > parallaxBg.offsetHeight) {
         nav.style.opacity = '1';
         nav.style.backgroundColor = 'black';
+        nav.style.padding = '5px 0';
         
     } else {
         nav.style.opacity = '0';
