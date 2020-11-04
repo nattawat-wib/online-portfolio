@@ -182,7 +182,7 @@ nav ul li a:hover{
     width: 40%;
     bottom: 10vh;
     left: 30%;
-    z-index: 99;
+    z-index: 30;
     color: #859AAD;
     font-size: 20px;
     text-align: center;
@@ -227,8 +227,9 @@ main {
 
 .title {
     color: #6BAFBB;
-    font-size: 80px;
+    font-size: 40px;
     margin: 100px auto;
+    padding-top: 40px;
     text-align: center;
     font-weight: 700;
     text-decoration: underline;
@@ -236,13 +237,13 @@ main {
 
 .sub-title{
     color: #859AAD;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 
 .main {
     color: #152D4F;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 40px;
     font-weight: 400;
 }
@@ -263,6 +264,7 @@ main {
 
 .about {
     background-color: #B7DBD8;
+    position: relative;
 }
 
 .about__img img {
@@ -317,7 +319,7 @@ main {
     transform: translate(0, -10px);
     box-shadow: 5px 5px 20px gray;
     cursor: pointer;
-    filter: brightness(80%);
+    filter: brightness(90%);
 }
 
 .project-list {
@@ -331,12 +333,14 @@ main {
     font-size: 20px;
     margin: 20px 0;
     transition: .5s ease;
+    font-weight: 300;
 }
 
 .project-des span {
     font-size: 22px;
     margin: 1px 0;
     display: block;
+    font-weight: 500;
 }
 
 .back-to-top {
