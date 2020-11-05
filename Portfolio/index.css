@@ -36,6 +36,10 @@ html, body {
     font-family: 'Kanit', sans-serif !important; 
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 *::selection {
     background-color:#B7DBD8 ;
     color: #152D4F ;
@@ -47,7 +51,7 @@ html, body {
 }
 
 ::-webkit-scrollbar {
-    background: transparent;
+    background: #215C7D;
     width: 10px;
     color: transparent;
 }
@@ -151,7 +155,7 @@ nav ul li a:hover{
 
 .parallax__text {
     color: #b7dbd8;
-    font-size: 200px;
+    font-size: 150px;
     text-align: center;
     z-index: 9;
     position: absolute;
@@ -252,6 +256,10 @@ main {
     font-weight: 500;
 }
 
+.modal {
+    z-index: 50;
+}
+
 .main {
     color: #152D4F;
     font-size: 25px;
@@ -269,13 +277,15 @@ main {
 .detail {
     color: #152D4F;
     font-size: 20px;
-    margin: 0 40px; 
+    margin: 7px 40px; 
     font-weight: 200;
 }
 
 .about {
     background-color: #B7DBD8;
     position: relative;
+    border-bottom-right-radius: 10% ;
+    border-bottom-left-radius: 0px ;
 }
 
 .about__img img {
@@ -286,8 +296,10 @@ main {
 }
 
 .about__intro {
-    font-weight: 100;
-    font-size: 30px;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 15px;
 }
 
 .about__detail p {
@@ -295,6 +307,43 @@ main {
     text-align: left;
     font-size: 23px;
     font-weight: 400;
+}
+
+button {
+    outline: none;
+}
+button:focus {
+    outline: none !important;
+}
+
+.download-resume {
+    display: block;
+    margin: 20px auto;  
+    padding: 10px 15px ;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+    transition: .5s ease;
+    border: 3px solid #215C7D;
+}
+
+.download-resume a {
+    text-decoration: none;
+    color: #215C7D;
+    transition: .5s ease;
+}
+
+.download-resume:hover {
+    background-color: #215C7D;
+    transform: translate(0, -2px);
+    box-shadow: 5px 5px 10px#859AAD;
+}
+
+.download-resume:hover a {
+    text-decoration: none;
+    color: #B7DBD8;
 }
 
 .skill__icon-group{
@@ -501,7 +550,7 @@ footer ul li a:hover {
     }
 
     .about__img img {
-        width: 50%;
+        width: 60%;
     }
 
     .about__detail {
@@ -511,7 +560,6 @@ footer ul li a:hover {
 
     .about__intro {
         margin-top: 40px;
-        font-size: 30px;
         text-align: center;
     }
     
@@ -582,6 +630,10 @@ footer ul li a:hover {
         width: 60%;
     }
 
+    .about__img img {
+        width: 80%;
+    }
+
     .content-box {
         margin: 0;
     }
@@ -646,7 +698,8 @@ footer ul li a:hover {
     }
 
     .about__intro {
-        margin-top: 20px;
+        margin-top: 15px;
+        font-size: 18px;
     }
     
     .about__detail p {
