@@ -194,7 +194,7 @@ nav ul li a:hover{
     bottom: 10vh;
     left: 30%;
     z-index: 30;
-    color: #859AAD;
+    color: #B7DBD8;
     font-size: 20px;
     text-align: center;
     font-weight: 500;
@@ -411,6 +411,7 @@ main {
 
 .disable i{
     color: #dee1e48f;
+    cursor: default;
 }
 
 .contact-list a:hover {
@@ -521,10 +522,6 @@ footer ul li a:hover {
     .project-list {
         margin: 20px auto;
     }
-
-    .project-des {
-        display: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -605,6 +602,10 @@ footer ul li a:hover {
         justify-content: center;
         align-items: center; 
      }
+
+     .project-des {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {

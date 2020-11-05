@@ -17,6 +17,8 @@ function parallaxHeader() {
 function navbarAnimate() {
     const nav = document.querySelector('nav');
     const cloud = document.querySelector('.parallax__cloud');
+    const toggle = document.querySelector('nav input');
+    const toggleButton = document.querySelector('nav label');
 
     if (pageYOffset < 10) {
         nav.style.opacity = '1';
@@ -27,11 +29,13 @@ function navbarAnimate() {
     } else if (window.scrollY > cloud.offsetTop) {
         nav.style.opacity = '1';
         nav.style.backgroundColor = '#152D4F';
-        nav.style.padding = '12px 0';
+        nav.style.padding = '3px';
         nav.style.borderBottom = '#3892B8 solid 3px';
 
     } else {
         nav.style.opacity = '0';
+        toggle.checked = false;
+        toggleButton.innerHTML = '<i class="fas fa-bars"> </i>';
     }
 }
 
@@ -40,7 +44,7 @@ const menuList = document.querySelectorAll('nav ul li');
 const toggleButton = document.querySelector('nav label');
 
 function autoChangeNav() {
-    if(toggle.checked == true) {
+    if (toggle.checked == true) {
         toggleButton.innerHTML = '<i class="fas fa-bars"> </i>';
     } else {
         toggleButton.innerHTML = '<i class="fas fa-times"></i>';
