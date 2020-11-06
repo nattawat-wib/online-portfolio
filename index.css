@@ -8,6 +8,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
     background-color: #B7DBD8;
     transition: 2s ease;
     z-index: 99;
@@ -37,7 +38,7 @@ html, body {
 }
 
 body {
-    overflow: visible;
+    overflow: hidden;
 }
 
 a:hover {
@@ -541,6 +542,14 @@ footer ul li a:hover {
 }
 
 @media (max-width: 1211px) {
+    .loader__img {
+        width: 35%;
+    }
+    
+    .loader__text {
+        width: 35%;
+    }
+
     .parallax__text {
         font-size: 120px;
         padding: 0 20px;
@@ -579,6 +588,14 @@ footer ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    .loader__img {
+        width: 50%;
+    }
+    
+    .loader__text {
+        width: 50%;
+    }
+
     nav {
         position: fixed;
         top: 0;
