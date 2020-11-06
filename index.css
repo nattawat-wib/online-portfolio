@@ -359,8 +359,8 @@ button:focus {
 
 .skill__icon-group img {
     border-radius: 25%;
-    width: 14%;
-    margin: 10px;
+    width: 100%;
+    margin: 0;
 }
 
 .skill__icon-group img:last-child {
@@ -717,8 +717,7 @@ footer ul li a:hover {
 
     .skill__icon-group img {
         border-radius: 25%;
-        width: 45%;
-        height: 45%;
+        width: 30%;
         margin: 0px;
     }
 
