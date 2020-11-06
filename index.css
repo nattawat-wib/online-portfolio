@@ -715,6 +715,12 @@ footer ul li a:hover {
         font-size: 17px;
     }
 
+    .skill__icon-group img {
+        border-radius: 25%;
+        width: 30%;
+        margin: 5px;
+    }
+
     footer ul{
         margin: 10px 0;
     }
