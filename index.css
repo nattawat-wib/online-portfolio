@@ -289,7 +289,7 @@ main {
     background-color: #B7DBD8;
     position: relative;
     border-bottom-right-radius: 10% ;
-    border-bottom-left-radius: 0px ;
+    overflow: hidden;
 }
 
 .about__img img {
@@ -369,6 +369,7 @@ button:focus {
 
 .project {
     background-color: #B7DBD8;
+    overflow: hidden;
 }
 
 .project img {
@@ -638,6 +639,10 @@ footer ul li a:hover {
         width: 80%;
     }
 
+    .about {
+        border-bottom-right-radius: 0% ;
+    }
+
     .content-box {
         margin: 0;
     }
@@ -737,5 +742,12 @@ footer ul li a:hover {
         right: 20px;
         font-size: 35px;
     }
-        
+}
+
+@media (max-width: 320px) {
+    .parallax__text {
+        font-size: 50px;
+        padding: 0 20px;
+        top:25%;
+    }
 }
