@@ -359,8 +359,8 @@ button:focus {
 
 .skill__icon-group img {
     border-radius: 25%;
-    width: 100%;
-    margin: 0;
+    width: 14%;
+    margin: 10px;
 }
 
 .skill__icon-group img:last-child {
