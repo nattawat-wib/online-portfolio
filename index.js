@@ -106,7 +106,6 @@ function run() {
         const bodyDom = document.querySelector('body');
 
         loaderPage.style.opacity = '0';
-        loaderPage.style.height = '0vh'
         bodyDom.style.overflow = 'visible';
         setTimeout(() => { loaderPage.style.display = 'none'; }, 2000)
     })
