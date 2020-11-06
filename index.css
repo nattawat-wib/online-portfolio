@@ -359,11 +359,12 @@ button:focus {
 
 .skill__icon-group img {
     border-radius: 25%;
-    width: 14%;
-    margin: 10px;
+    width: 80%;
+    margin: 10px auto;
+    display: block;
 }
 
-.skill__icon-group img:last-child {
+.git-hub-icon {
     border: 3px solid #000000;
 }
 
@@ -716,9 +717,7 @@ footer ul li a:hover {
     }
 
     .skill__icon-group img {
-        border-radius: 25%;
-        width: 30%;
-        margin: 0px;
+        width: 100%;
     }
 
     footer ul{
