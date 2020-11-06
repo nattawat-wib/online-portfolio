@@ -101,15 +101,15 @@ allProjectImg.forEach((img, index) => {
 
 function run() {
 
-    // window.addEventListener('load', () => {
-    //     const loaderPage = document.querySelector('.loader');
-    //     const bodyDom = document.querySelector('body');
+    window.addEventListener('load', () => {
+        const loaderPage = document.querySelector('.loader');
+        const bodyDom = document.querySelector('body');
 
-    //     loaderPage.style.opacity = '0';
-    //     loaderPage.style.height = '0vh'
-    //     bodyDom.style.overflow = 'visible';
-    //     setTimeout(() => { loaderPage.style.display = 'none'; }, 2000)
-    // })
+        loaderPage.style.opacity = '0';
+        loaderPage.style.height = '0vh'
+        bodyDom.style.overflow = 'visible';
+        setTimeout(() => { loaderPage.style.display = 'none'; }, 2000)
+    })
 
     window.addEventListener('scroll', () => {
         parallaxHeader();
