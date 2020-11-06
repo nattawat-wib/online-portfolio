@@ -34,6 +34,7 @@ function navbarAnimate() {
 
     } else {
         nav.style.opacity = '0';
+        nav.style.height = ''
         toggle.checked = false;
         toggleButton.innerHTML = '<i class="fas fa-bars"> </i>';
     }
