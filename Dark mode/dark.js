@@ -2,7 +2,7 @@ const nav = document.querySelector('nav');
 const navCon = document.querySelector('.nav');
 
 window.onscroll = function () {
-    if (pageYOffset < 1 && window.innerWidth > 1211) {
+    if (pageYOffset < 10) {
         nav.style.backgroundColor = 'transparent'
         navCon.style.padding = '40px 40px';
         nav.style.borderBottom = 'none'

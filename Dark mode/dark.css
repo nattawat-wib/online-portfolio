@@ -379,12 +379,12 @@ button {
     justify-content: space-around;
     align-items: center;
     margin: 60px 0;
+    overflow: hidden;
 }
 
 .about__detail--box1 {
     width: 40%;
     opacity: 0;
-
 }
 .about__detail--box2 {
     width: 40%;
@@ -412,6 +412,7 @@ button {
     justify-content: center;
     align-items: center;
     margin: auto;
+    overflow: hidden;
 }
 
 .about-con__img--1 {
