@@ -369,6 +369,10 @@ button:focus {
     border: 3px solid #000000;
 }
 
+.react-icon {
+    border: 3px solid #42c1fb;
+}
+
 .project {
     background-color: #B7DBD8;
     overflow: hidden;
